@@ -38,3 +38,31 @@ html
 {
     overflow-x: hidden;
 }
+body.dark
+{
+    --light:#161a1e;
+    --grey:#25252c;
+    --dark: #fbfbfb;
+}
+body
+{
+    background: var(--grey);
+    overflow-x: hidden;
+}
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--light);
+    width: 230px;
+    height: 100%;
+    z-index: 2600;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    transition: all 0.3s ease;
+}
+.sidebar::-webkit-scrollbar
+{
+    display: none;
+}
