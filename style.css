@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     --light: #f6f6f9;
@@ -8,70 +8,69 @@
     --dark-grey: #AAAAAA;
     --dark: #363949;
     --danger: #D32F2F;
-    --light-danger: #FECDD3;
+	--light-danger: #FECDD3;
     --warning: #FBC02D;
     --light-warning: #FFF2C6;
     --success: #388E3C;
     --light-success: #BBF7D0;
 }
 
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.bx
-{
+
+.bx{
     font-size: 1.7rem;
 }
-a
-{
+
+a{
     text-decoration: none;
 }
-li
-{
+
+li{
     list-style: none;
 }
-html
-{
+
+html{
     overflow-x: hidden;
 }
-body.dark
-{
-    --light:#161a1e;
-    --grey:#25252c;
-    --dark: #fbfbfb;
+
+body.dark{
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb
 }
-body
-{
+
+body{
     background: var(--grey);
     overflow-x: hidden;
 }
-.sidebar
-{
+
+.sidebar{
     position: fixed;
     top: 0;
     left: 0;
     background: var(--light);
     width: 230px;
     height: 100%;
-    z-index: 2600;
+    z-index: 2000;
     overflow-x: hidden;
     scrollbar-width: none;
     transition: all 0.3s ease;
 }
-.sidebar::-webkit-scrollbar
-{
+
+.sidebar::-webkit-scrollbar{
     display: none;
 }
-.sidebar.close
-{
+
+.sidebar.close{
     width: 60px;
 }
-.sidebar .logo  
-{
+
+.sidebar .logo{
     font-size: 24px;
     font-weight: 700;
     height: 56px;
@@ -82,22 +81,23 @@ body
     padding-bottom: 20px;
     box-sizing: content-box;
 }
-.sidebar .logo .logo-name span
-{
+
+.sidebar .logo .logo-name span{
     color: var(--dark);
 }
-.sidebar .logo .bx
-{
+
+.sidebar .logo .bx{
     min-width: 60px;
     display: flex;
     justify-content: center;
     font-size: 2.2rem;
 }
-.sidebar .side-menu
-{
+
+.sidebar .side-menu{
     width: 100%;
     margin-top: 48px;
 }
+
 .sidebar .side-menu li{
     height: 48px;
     background: transparent;
@@ -134,8 +134,8 @@ body
     box-shadow: 20px -20px 0 var(--grey);
     z-index: -1;
 }
-.sidebar .side-menu li a
-{
+
+.sidebar .side-menu li a{
     width: 100%;
     height: 100%;
     background: var(--light);
@@ -148,23 +148,23 @@ body
     overflow-x: hidden;
     transition: all 0.3s ease;
 }
-.sidebar .side-menu li.active a
-{
+
+.sidebar .side-menu li.active a{
     color: var(--success);
 }
-.sidebar.close .side-menu li a
-{
-    width: calc(48px-(4px * 2));
+
+.sidebar.close .side-menu li a{
+    width: calc(48px - (4px * 2));
     transition: all 0.3s ease;
 }
-.sidebar .side-menu li a .bx
-{
-    min-width: calc(60px - ((4px + 6px)*2));
+
+.sidebar .side-menu li a .bx{
+    min-width: calc(60px - ((4px + 6px) * 2));
     display: flex;
     font-size: 1.6rem;
     justify-content: center;
 }
-.sidebar .side-menu li a.logout
-{
+
+.sidebar .side-menu li a.logout{
     color: var(--danger);
 }
