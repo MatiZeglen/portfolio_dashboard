@@ -294,7 +294,7 @@ body{
     display: block;
     min-width: 50px;
     height: 25px;
-    background: var(--dark);
+    background: var(--light);
     cursor: pointer;
     position: relative;
     border-radius: 25px;
