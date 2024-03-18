@@ -175,8 +175,21 @@ body{
     left: 230px;
     transition: all 0.3s ease;
 }
-.sidebar.sidebar.close~.content
+.sidebar.close~.content
 {
     width: calc(100%-60px);
     left: 60px;
+}
+.content nav
+{
+    height: 56px;
+    background: var(--light);
+    padding: 0 24px 0 0;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
