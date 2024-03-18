@@ -168,3 +168,15 @@ body{
 .sidebar .side-menu li a.logout{
     color: var(--danger);
 }
+.content
+{
+    position: relative;
+    width: calc(100% - 230px);
+    left: 230px;
+    transition: all 0.3s ease;
+}
+.sidebar.sidebar.close~.content
+{
+    width: calc(100%-60px);
+    left: 60px;
+}
