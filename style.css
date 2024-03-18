@@ -209,5 +209,72 @@ body{
 }
 .content nav .bx.bx-menu
 {
-    
+    cursor: pointer;
+    color: var(--dark);
+}
+.content nav form
+{
+    max-width: 400px;
+    width: 100%;
+    margin-right: auto;
+}
+.content nav form .form-input
+{
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+.content nav form .form-input input
+{
+    flex-grow: 1;
+    padding: 0 16px;
+    height: 100%;
+    border: none;
+    background: var(--grey);
+    border-radius: 36px 0 0 36px;
+    outline: none;
+    width: 100%;
+    color: var(--dark);
+}
+.content nav form .form-input button
+{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 0 36px 36px 0;
+    cursor: pointer;
+}
+.content nav .notif
+{
+    font-size: 20px;
+    position: relative;
+}
+.content nav .notif .count
+{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--danger);
+    border-radius: 50%;
+    color: var(--light);
+    border: 2px solod var(--light);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content nav .profile img
+{
+    width:36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
 }
