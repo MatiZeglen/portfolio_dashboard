@@ -493,4 +493,14 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
+}
+.content article .bottom-data .orders table tbody tr
+{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.content article .bottom-data .orders table tbody tr:hover
+{
+    background-color: var(--grey);
 }
