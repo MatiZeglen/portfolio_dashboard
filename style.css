@@ -147,12 +147,14 @@ body{
     white-space: nowrap;
     overflow-x: hidden;
     transition: all 0.3s ease;
+    text-shadow: 1px 1px 80px;
 }
 .sidebar .side-menu li a:hover
 {
     color: #5e3bee;
     transition: all 0.3s ease;
     box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 50px;
 }
 .sidebar .side-menu li.active a{
     color: var(--success);
@@ -391,6 +393,17 @@ body{
     align-items: center;
     grid-gap: 24px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.content article .insights li i
+{
+    transition: all 0.3s ease;
+}
+.content article .insights li i:hover
+{
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease;
 }
 .content article .insights li .bx
 {
@@ -406,21 +419,25 @@ body{
 {
     background-color: var(--light-primary);
     color: var(--primary);
+    box-shadow: 1px 1px 15px;
 }
 .content article .insights li:nth-child(2) .bx
 {
     background-color: var(--light-warning);
     color: var(--warning);
+    box-shadow: 1px 1px 15px;
 }
 .content article .insights li:nth-child(3) .bx
 {
     background-color: var(--light-success);
     color: var(--success);
+    box-shadow: 1px 1px 15px;
 }
 .content article .insights li:nth-child(4) .bx
 {
     background-color: var(--light-danger);
     color: var(--danger);
+    box-shadow: 1px 1px 15px;
 }
 .content article .insights li .info h3
 {
@@ -520,12 +537,15 @@ body{
 .content article .bottom-data .orders table tr td .status.completed
 {
     background-color: var(--success);
+    box-shadow: 1px 1px 20px var(--success);
 }
 .content article .bottom-data .orders table tr td .status.pending
 {
     background-color: var(--warning);
+    box-shadow: 1px 1px 20px var(--warning);
 }
 .content article .bottom-data .orders table tr td .status.process
 {
     background-color: var(--primary);
+    box-shadow: 1px 1px 20px var(--primary);
 }
