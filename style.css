@@ -148,7 +148,12 @@ body{
     overflow-x: hidden;
     transition: all 0.3s ease;
 }
-
+.sidebar .side-menu li a:hover
+{
+    color: #5e3bee;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 5px black;
+}
 .sidebar .side-menu li.active a{
     color: var(--success);
 }
@@ -186,7 +191,7 @@ body{
     left: 230px;
     transition: all 0.3s ease;
 }
-.Sidebar.close~.content{
+.sidebar.close~.content{
     width: calc(100% - 60px);
     left: 60px;
 }
@@ -494,6 +499,7 @@ body{
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 2px 2px 2px;
 }
 .content article .bottom-data .orders table tbody tr
 {
