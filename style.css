@@ -517,9 +517,9 @@ body{
 }
 .content article .bottom-data .orders table tr td .status.pending
 {
-    background-color: var(--danger);
+    background-color: var(--warning);
 }
 .content article .bottom-data .orders table tr td .status.process
 {
-    background-color: var(--warning);
+    background-color: var(--primary);
 }
