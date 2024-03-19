@@ -504,3 +504,22 @@ body{
 {
     background-color: var(--grey);
 }
+.content article .bottom-data .orders table tr td .status
+{
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+.content article .bottom-data .orders table tr td .status.completed
+{
+    background-color: var(--success);
+}
+.content article .bottom-data .orders table tr td .status.pending
+{
+    background-color: var(--danger);
+}
+.content article .bottom-data .orders table tr td .status.process
+{
+    background-color: var(--warning);
+}
