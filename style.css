@@ -420,24 +420,36 @@ body{
     background-color: var(--light-primary);
     color: var(--primary);
     box-shadow: 1px 1px 15px;
+    animation-name: primary ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .insights li:nth-child(2) .bx
 {
     background-color: var(--light-warning);
     color: var(--warning);
     box-shadow: 1px 1px 15px;
+    animation-name: warning ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .insights li:nth-child(3) .bx
 {
     background-color: var(--light-success);
     color: var(--success);
     box-shadow: 1px 1px 15px;
+    animation-name: success ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .insights li:nth-child(4) .bx
 {
     background-color: var(--light-danger);
     color: var(--danger);
     box-shadow: 1px 1px 15px;
+    animation-name: danger ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .insights li .info h3
 {
@@ -538,16 +550,25 @@ body{
 {
     background-color: var(--success);
     box-shadow: 1px 1px 20px var(--success);
+    animation-name: success ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .bottom-data .orders table tr td .status.pending
 {
     background-color: var(--warning);
     box-shadow: 1px 1px 20px var(--warning);
+    animation-name: warning ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .bottom-data .orders table tr td .status.process
 {
     background-color: var(--primary);
     box-shadow: 1px 1px 20px var(--primary);
+    animation-name: primary ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .bottom-data .reminders
 {
@@ -592,7 +613,7 @@ body{
 .content article .bottom-data .reminders .task-list li.not-completed
 {
     border-left:10px solid var(--danger);
-    animation-name: warning ;
+    animation-name: danger;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
@@ -600,11 +621,43 @@ body{
 {
     margin-bottom: 0;
 }
-@keyframes warning
+@keyframes danger
 {
     0%{box-shadow: 5px 5px 25px var(--danger);}
     25%{box-shadow: 5px 5px 25px var(--grey);}
     50%{box-shadow: 5px 5px 25px var(--danger);}
     75%{box-shadow: 5px 5px 25px var(--grey);}
     100%{box-shadow: 5px 5px 25px var(--danger);}
+}
+@keyframes primary
+{
+    0%{box-shadow: 5px 5px 25px var(--primary);}
+    25%{box-shadow: 5px 5px 25px var(--grey);}
+    50%{box-shadow: 5px 5px 25px var(--primary);}
+    75%{box-shadow: 5px 5px 25px var(--grey);}
+    100%{box-shadow: 5px 5px 25px var(--primary);}
+}
+@keyframes warning
+{
+    0%{box-shadow: 5px 5px 25px var(--warning);}
+    25%{box-shadow: 5px 5px 25px var(--grey);}
+    50%{box-shadow: 5px 5px 25px var(--warning);}
+    75%{box-shadow: 5px 5px 25px var(--grey);}
+    100%{box-shadow: 5px 5px 25px var(--warning);}
+}
+@keyframes success
+{
+    0%{box-shadow: 5px 5px 25px var(--success);}
+    25%{box-shadow: 5px 5px 25px var(--grey);}
+    50%{box-shadow: 5px 5px 25px var(--success);}
+    75%{box-shadow: 5px 5px 25px var(--grey);}
+    100%{box-shadow: 5px 5px 25px var(--success);}
+}
+@keyframes primary
+{
+    0%{box-shadow: 5px 5px 25px var(--primary);}
+    25%{box-shadow: 5px 5px 25px var(--grey);}
+    50%{box-shadow: 5px 5px 25px var(--primary);}
+    75%{box-shadow: 5px 5px 25px var(--grey);}
+    100%{box-shadow: 5px 5px 25px var(--primary);}
 }
