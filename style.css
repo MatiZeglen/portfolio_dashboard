@@ -704,4 +704,20 @@ body{
     {
         display: none;
     }
+    .content article .insights
+    {
+        grid-template-columns: 1fr;
+    }
+    .content article .bottom-data .header
+    {
+        min-width: 340px;
+    }
+    .content article .bottom-data .orders table
+    {
+        min-width: 340px;
+    }
+    .content article .bottom-data .reminders .task-list
+    {
+        min-width: 340px;
+    }
 }
