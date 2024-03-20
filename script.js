@@ -34,6 +34,11 @@ searchBtn.addEventListener('click', function (e) {
         }
     }
 });
+const dmode = document.querySelector('.content nav .bx.bx-sun');
+dmode.addEventListener('click', () =>
+{
+     sideBar.classList.toggle('close');
+})
 
 window.addEventListener('resize', () =>
 {
@@ -57,9 +62,11 @@ toggler.addEventListener('change', function()
     if(this.checked)
     {
         document.body.classList.add('dark');
+        dmode.classList.replace('bx-sun', 'bx-moon');
     }
     else
     {
         document.body.classList.remove('dark');
+        dmode.classList.replace('bx-moon', 'bx-sun');
     }
 });
