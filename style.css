@@ -549,3 +549,48 @@ body{
     background-color: var(--primary);
     box-shadow: 1px 1px 20px var(--primary);
 }
+.content article .bottom-data .reminders
+{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.content article .bottom-data .reminders .task-list
+{
+    width: 100%;
+}
+.content article .bottom-data .reminders .task-list li 
+{
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: var(--grey);
+    padding: 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content article .bottom-data .reminders .task-list li .task-title
+{
+    display: flex;
+    align-items: center;
+}
+.content article .bottom-data .reminders .task-list li .task-title p
+{
+    margin-left: 6px;
+}
+.content article .bottom-data .reminders .task-list li .task-title .bx
+{
+    cursor: pointer;
+}
+.content article .bottom-data .reminders .task-list li.completed
+{
+    border-left: 10px solid var(--success);
+}
+.content article .bottom-data .reminders .task-list li.not-completed
+{
+    border-left: 10px solid var(--danger);
+}
+.content article .bottom-data .reminders .task-list li:last-child
+{
+    margin-bottom: 0;
+}
