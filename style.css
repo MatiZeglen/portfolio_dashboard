@@ -591,12 +591,20 @@ body{
 }
 .content article .bottom-data .reminders .task-list li.not-completed
 {
-    background-color: var(--danger);
-    opacity: 90%;
-    color: black;
-    box-shadow: 2px 2px 10px var(--danger);
+    border-left:10px solid var(--danger);
+    animation-name: warning ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .content article .bottom-data .reminders .task-list li:last-child
 {
     margin-bottom: 0;
+}
+@keyframes warning
+{
+    0%{box-shadow: 5px 5px 25px var(--danger);}
+    25%{box-shadow: 5px 5px 25px var(--grey);}
+    50%{box-shadow: 5px 5px 25px var(--danger);}
+    75%{box-shadow: 5px 5px 25px var(--grey);}
+    100%{box-shadow: 5px 5px 25px var(--danger);}
 }
