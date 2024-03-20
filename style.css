@@ -661,3 +661,22 @@ body{
     75%{box-shadow: 5px 5px 25px var(--grey);}
     100%{box-shadow: 5px 5px 25px var(--primary);}
 }
+@media screen and (max-width: 768px)
+{
+    .sidebar
+    {
+        width: 200px;
+    }
+    .content
+    {
+        width: calc(100%-60px);
+        left: 200px;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    .content nav form .form-input input
+    {
+        display: none;
+    }
+}
