@@ -679,4 +679,29 @@ body{
     {
         display: none;
     }
+    .content nav form .form-input button
+    {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        color: var(--dark);
+        border-radius: none;
+    }
+    .content nav form.show .form-input input
+    {
+        display: block;
+        width: 100%;
+    }
+    .content nav form.show .form-input button
+    {
+        width: 36px;
+        height: 100%;
+        color: var(--light);
+        background-color: var(--danger);
+        border-radius: 0 36px 36px 0;
+    }
+    .content nav form.show~.notif, .content nav form.show~.profile
+    {
+        display: none;
+    }
 }
